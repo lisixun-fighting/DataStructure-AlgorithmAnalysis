@@ -55,6 +55,7 @@ public class QuickSort implements SortStrategy, SelectStrategy {
             T pivot = median3(a, left, right);
             // Begin partitioning
             int i = left, j = right - 1;
+
             for (; ; ) {
                 while (a[++i].compareTo(pivot) < 0) ;
                 while (a[--j].compareTo(pivot) > 0) ;
