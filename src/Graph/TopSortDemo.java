@@ -12,6 +12,7 @@ public class TopSortDemo {
     }
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        // create adjacency table
         Vertex[] vertices = new Vertex[numCourses];
         for (int i = 0; i < vertices.length; i++) {
             vertices[i] = new Vertex();
